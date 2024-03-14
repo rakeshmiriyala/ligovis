@@ -1,0 +1,13 @@
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(-20%);
+  }
+}
+
+.animate-image {
+  animation: floatUpDown 5s ease-in-out infinite;
+}
