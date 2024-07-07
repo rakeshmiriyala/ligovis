@@ -77,26 +77,28 @@ const Services = () => {
     <div
       id="services"
       className="h-auto flex flex-col items-center justify-center py-8"
-      style={{
-        background: `linear-gradient(rgb(112, 93, 239 , 0.7), rgb(112, 93, 239, 0.7)) `,
-      }}
+      style={
+        {
+          // background: `linear-gradient(rgb(112, 93, 239 , 0.7), rgb(112, 93, 239, 0.7)) `,
+        }
+      }
     >
       <h1 className="text-5xl font-bold text-white mb-8">SERVICES</h1>
       <div className="w-full" style={{ height: "480px" }} ref={sliderRef}>
         <Slider {...settings}>
           {cards.map((card) => (
             <div key={card.id} className="px-4 focus:outline-none">
-              <div className="bg-white rounded-3xl shadow-lg p-3 h-[420px]">
+              <div className="bg-white rounded-3xl text-white p-3 h-[420px]">
                 <img
                   className="mx-auto h-36"
                   src={card.imageUrl}
                   alt={card.title}
                 />
                 <div className="text-center mt-4">
-                  <h2 className="text-lg font-bold text-gray-800 mb-2">
+                  <h2 className="text-lg font-bold text-black mb-2">
                     {card.title}
                   </h2>
-                  <p className="text-gray-700">{card.content}</p>
+                  <p className="text-black">{card.content}</p>
                 </div>
               </div>
             </div>

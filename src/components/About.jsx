@@ -6,7 +6,7 @@ const About = () => {
     <div
       className="flex justify-center items-start"
       style={{
-        background: `linear-gradient(rgb(112, 93, 239 , 0.7), rgb(112, 93, 239, 0.7)) no-repeat`,
+        // background: `linear-gradient(rgb(112, 93, 239 , 0.7), rgb(112, 93, 239, 0.7)) no-repeat`,
         backgroundSize: "cover",
       }}
     >

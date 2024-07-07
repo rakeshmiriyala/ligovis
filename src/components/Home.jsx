@@ -1,9 +1,10 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useState, useEffect, useRef } from "react";
 import {
   FaHome,
   FaDribbble,
-  FaWhatsapp,
   FaCloudUploadAlt,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa";
@@ -11,7 +12,8 @@ import Typed from "typed.js";
 import { FaPhoneVolume } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import bgvideo from "../assets/light.mp4";
+import companyLogo from "../assets/logo.png";
 const Home = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [knowMore, SetKnowMore] = useState(false);
@@ -64,18 +66,34 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="flex flex-col items-start justify-start relative h-screen"
+      className="flex flex-col items-start justify-start relative h-auto lg:pb-52 pb-24"
       style={{
-        background: `linear-gradient(rgb(112, 93, 239 , 0.9), rgb(112, 93, 239, 0.7)) `,
+        // background: `linear-gradient(rgb(112, 93, 239 , 0.9), rgb(112, 93, 239, 0.7)) `,
         backgroundSize: "cover",
         textAlign: "left",
         paddingLeft: "10vw",
         paddingTop: "15vh",
-        minHeight: "80vh",
         overflowX: "hidden",
         overflowY: "hidden",
       }}
     >
+      <video
+        autoPlay
+        loop
+        muted
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: -1,
+        }}
+      >
+        <source src={bgvideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="block  lg:hidden absolute top-4 right-4">
         <button onClick={toggleMenu} className="color-white">
           <svg
@@ -137,7 +155,9 @@ const Home = () => {
             <FaDribbble className="icon text-white text-5xl m-2" />
           </div>
           <div data-aos="fade-left" className="aos-icons">
-            <FaWhatsapp className="icon text-white text-5xl m-2" />
+            <a href="https://wa.me/917671091557?text=Hello?" target="_blank">
+              <FaWhatsapp className="icon text-white text-6xl m-2" />
+            </a>
           </div>
           <div data-aos="fade-left" className="aos-icons">
             <a href="#services">
@@ -153,6 +173,11 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col ml-2 sm:ml-5 mt-20 xl:ml-12 lg:10 ">
+        <img
+          src={companyLogo}
+          alt="Company Logo"
+          className="absolute top-0 left-0 lg:w-20 lg:h-20 w-20 h-20 mt-4 ml-4 z-10"
+        />
         <div className="flex justify-start items-start text-white mb-8">
           <h1
             className="lg:text-9xl md:text-6xl sm:text-4xl text-5xl"
