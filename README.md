@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+<body style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 20px;">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h1>Ligovis Upgrade</h1>
 
-## Available Scripts
+  <p>Ligovis Upgrade is a modern web solution for Ligovis, a digital marketing agency. This project includes an upgraded frontend and backend architecture aimed at providing a seamless user experience, faster performance, and enhanced scalability for Ligovis's services.</p>
 
-In the project directory, you can run:
+  <h2>🚀 Tech Stack</h2>
+  <ul>
+    <li><strong>Frontend:</strong> React.js, Tailwind CSS, React Router, AOS, Framer Motion</li>
+    <li><strong>Backend:</strong> Node.js, Express.js</li>
+    <li><strong>Database:</strong> MongoDB</li>
+    <li><strong>Hosting:</strong> Render, AWS (Elastic Beanstalk), Netlify</li>
+    <li><strong>Others:</strong> SheetDB API, React Icons, EmailJS, Axios</li>
+  </ul>
 
-### `npm start`
+  <h2>🌟 Features</h2>
+  <ul>
+    <li>Fully responsive UI/UX</li>
+    <li>Interactive animations with AOS and Framer Motion</li>
+    <li>Dynamic content handling using SheetDB API</li>
+    <li>Contact form integration with EmailJS</li>
+    <li>SEO optimized pages</li>
+    <li>Service showcase for Ligovis offerings</li>
+    <li>Scalable backend with RESTful APIs</li>
+    <li>Deployment ready with CI/CD support</li>
+  </ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <h2>📂 Folder Structure</h2>
+  <pre>
+ligovis_upgrade/
+│
+├── client/            # Frontend (React.js)
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/    # Images, videos
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── ...
+│   ├── package.json
+│   └── tailwind.config.js
+│
+├── server/            # Backend (Node.js + Express)
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   ├── .env
+│   └── package.json
+│
+├── README.md
+└── ...
+  </pre>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  <h2>🔧 Installation</h2>
 
-### `npm test`
+  <h3>1. Clone the repository</h3>
+  <pre><code>
+git clone https://github.com/rakeshmiriyala/ligovis_upgrade.git
+cd ligovis_upgrade
+  </code></pre>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  <h3>2. Setup Frontend</h3>
+  <pre><code>
+cd client
+npm install
+npm start
+  </code></pre>
 
-### `npm run build`
+  <h3>3. Setup Backend</h3>
+  <pre><code>
+cd server
+npm install
+node server.js
+  </code></pre>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  <h2>⚙️ Environment Variables</h2>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <h3>Backend (server/.env)</h3>
+  <pre>
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+SHEETDB_URL=your_sheetdb_api_endpoint
+EMAILJS_SERVICE_ID=your_service_id
+EMAILJS_TEMPLATE_ID=your_template_id
+EMAILJS_PUBLIC_KEY=your_public_key
+  </pre>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  <h3>Frontend (client/.env)</h3>
+  <pre>
+REACT_APP_SHEETDB_URL=your_sheetdb_api_endpoint
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+  </pre>
 
-### `npm run eject`
+  <h2>🚀 Deployment</h2>
+  <ul>
+    <li><strong>Frontend:</strong> Deployed on Netlify or Render</li>
+    <li><strong>Backend:</strong> Hosted on AWS Elastic Beanstalk or Render</li>
+  </ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  <h2>🤝 Contribution</h2>
+  <p>Contributions are welcome! Feel free to fork the repo, raise issues, or submit pull requests.</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  <h2>📜 License</h2>
+  <p>This project is licensed under the MIT License.</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  <h2>📞 Contact</h2>
+  <p>
+    <strong>Rakesh Miriyala</strong><br>
+    📧 rakeshmiriyala@example.com<br>
+    🌐 
+    <a href="https://linkedin.com/in/rakeshmiriyala" target="_blank">LinkedIn</a> | 
+    <a href="https://github.com/rakeshmiriyala" target="_blank">GitHub</a>
+  </p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</body>
